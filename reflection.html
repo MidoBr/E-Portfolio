@@ -51,8 +51,8 @@
 									
 									<p>
                     
-                    Network and information security management is a gigantic topic, this topic discusses the whole infrastructure for organizations, from routers, switches to end users’ workstations. The questions that always arise in my mind are how to secure information technology infrastructure for the organization? Secure the system against what? And secure it from whom?  
-I came to understand that in order to secure systems, the concept of the security triad also known as the (CIA) is coming into the spotlight. They are fundamental security control elements in information systems. The CIA refers to confidentiality, integrity and availability. Fortunately, these elements shaped the theoretical comprehension of information security, as well as academics and practitioners developing and implementing security controls in organizations. 
+                  Network and information security management is a gigantic topic, this topic discusses the whole infrastructure for organizations, from routers, switches to end users’ workstations. The questions that always arise in my mind are how to secure information technology infrastructure for the organization? Secure the system against what? And secure it from whom?  
+I came to understand that to secure systems, the concept of the security triad also known as the (CIA) is coming into the spotlight. They are fundamental security control elements in information systems. The CIA refers to confidentiality, integrity and availability. Fortunately, these elements shaped the theoretical comprehension of information security, as well as academics and practitioners developing and implementing security controls in organizations. 
 To eliminate the ambiguity related to this concept, let us have a brief overview of each element of the CIA triad:
 Confidentiality: is having control over those who have authorized access to the system based on a need to know. In other words, data stored in a system are confidential and protected, so it is only accessible by authorized employees. 
 Integrity: is the process of preventing the data from destruction or modifications by malicious actors. 
@@ -60,49 +60,49 @@ Availability: this security element ensures timely access as well as reliable us
 Now, after a brief explaining of what the essential security control elements are to be considered, the concerns are the threats that might impose a risk to the organization. To better understand the cybersecurity landscape, we better define some important terminologies:
 Vulnerabilities: A weakness in a system (Application, Server, Database, etc.…) or the system’s design that give the malicious actor the privilege to execute malicious commands as well as it gives him unauthorized access to data stored in the system. 
  Threats: The potential actions to be taken to get the advantage over security breaches in the system. 
-Attacks: We the malicious actor take an action to make harm to the system or damage it by exploiting the existing vulnerabilities using different tools, and malicious actors launch these attacks to achieve their goals.
+Attacks: We the malicious actor take an action to make harm to the system or damage it by exploiting the existing weaknesses using different tools, and malicious actors perform these attacks to satisfy their motives.
 After defining some key cybersecurity terminologies, we came to realize how attacks might be a serious dilemma to keep the system stable and resilient, although, there are various attacks out there to be evaluated against the system:  
 • Denial-of-service (DoS): Is an attack that allows the malicious actor to make the system or the network resource unavailable to legitimate users. 
- • Malware: In this attack, the malicious actor installs malicious software programs to gain unauthorized access to network resources or systems by exploiting existing vulnerabilities. 
+ • Malware: The malicious actor installs malicious programs to obtain unauthorized access to network resources or systems by exploiting existing weaknesses. 
 • Phishing: This harmful activity utilizes technology and social engineering to gather sensitive data from online users. Different communication channels are utilized to perform this attack such as email or web pages.  
 • SQL injection attack: Gaining unauthorized access to databases by malicious actors to take the action of manipulating or changing the SQL statement by injecting the application with the input string.
-• Session hijacking and Man-in-the-Middle attacks: Also known as (MIM, MitM, MiM or MITM), is when a malicious actor can intercept communication between systems. The malicious actor can intercept, replace or manipulate the traffic. 
-• Cross-site scripting (XSS): In this attack, the malicious actor exploits a vulnerability on the website to run a JavaScript code in the victim’s browser to steal some sensitive information. (Humayun et al, 2020)
+• Man-in-the-Middle attacks and Session hijacking: Also known as (MIM, MitM, MiM or MITM), is when a malicious actor can intercept communication between systems. The malicious actor can intercept, replace or manipulate the traffic. 
+• Cross-site scripting (XSS): The attacker exploits a vulnerability on the website to run a JavaScript code in the victim’s browser to obtain some sensitive information. (Humayun et al, 2020)
 Now, after understanding the basics of such a prominent domain, here I mean cybersecurity fundamentals, it is now a team for a team effort to produce a design document to promote the advantages my team will provide to the business. 
 As a team member, I created a website and submitted it to the other group to give them the chance to practice and evaluate our website. Also, I was able to work side by side with my peers to identify, classify and investigate the security challenges that are confronted by the 2-health website which was delivered to us by group 2.  
 The question is, what type of an attack could be a potential attack in general to this website? Assuming generic websites could be subject to DDoS, Man-in-the-middle and Data Breach attacks, but assuming the most prominent attacks for such websites, sensitive medical data is subjected to an exposure or data breach. In 2015 an incident of breaching 80 million healthcare records, including personal information occurred in Anthem Inc. (Edwards et al, 2016)
 
 Another challenge that confronted me, is evaluating the tools that we will use as a group with justifying the reason behind our selection. 
-OWASP Zed Attack Proxy: One of the very first steps an attacker might take is to acquire valuable information that is available to the public, OWASP Zed Attack Proxy is a straightforward actively maintained, open-source tool used by a variety of people with a wide range of experience in the field of cybersecurity. As well as its functionalities can be extended with add-ons, including broader coverage of different platforms/systems. Since the e-health web application contains sensitive medical and fitness data, then it is susceptible to a data breach, reputational loss or even a regulatory fine. (Makino&Klyuev, 2015)
+OWASP Zed Attack Proxy: One of the very first steps an attacker might take is to acquire valuable information that is available to the public, OWASP Zed Attack Proxy is an open-source actively maintained tool used by a variety of people with wide experience in the field of Information security. As well as its functionalities can be extended with add-ons, including broader coverage of different platforms/systems. Since the e-health web application contains sensitive medical and fitness data, then it is susceptible to a data breach, reputational loss or even a regulatory fine. (Makino&Klyuev, 2015)
 Tenable Nessus: A popular network vulnerability scanner, helps the pen tester to perform several scanning methods to detect vulnerabilities in the target system. Misconfiguration of security groups of the e-health web application might lead to unpleasant consequences to occur. Tenable Nessus enables pen testers to find the open ports as well as the version of software running on the machine, also, it identifies and makes prioritization of the organization’s risks which will lead to minimizing the likelihood of data breaches. 
 
-Using these tools to scan the e-health website rises some concerns that made me wonder what these threats are and how they can affect the website. Usually, the e-health website contains data related to the patients, whether it is fitness, medical or financial data. The blind SQL Injection allows the malicious actor to access the database server, and perform some critical actions such as adding, altering or deleting records. As a consequence of this attack, the security triad of the business is vulnerable, where the confidentiality is exposed to data exposure and integrity of the data is questioned due to the attacker’s capability of altering existing data.  
-DS_Store Web Directory listing: DS_Store is a file that helps locate the position of icons of the remote web server as well as lists the files and directory exits in the webserver. That means the e-health system is vulnerable to such threats and the attacker can read files on the webserver. (Nessus, 2001)
+Using these tools to scan the e-health website rises some concerns that made me wonder what these threats are and how they can affect the website. Usually, the e-health website contains data related to the patients, whether it is fitness, medical or financial data. The SQL Injection allows an attacker to access the databases, and execute malicious commands. As a result of this attack, the CIA of the business is vulnerable. Confidentiality is exposed to data exposure, the integrity of the data is exposed as an attacker will be able to change data.  
+DS_Store Web Directory listing: DS_Store helps to identify the position of icons of the remote web server as well as lists the files and directory exits in the webserver. That means the e-health system is vulnerable to such threats and the attacker can read files on the webserver. (Nessus, 2001)
 CGI Generic Path Traversal (write test): The malicious actor having the ability to modify files within the e-health web server will affect the integrity of the data stored in the webserver. This vulnerability allows the attacker the execute commands or alter arbitrary files in the webserver. (Nessus, 2010)
 Web Application Potentially Vulnerable to Clickjacking: Clickjacking vulnerability allows the attacker to trick the user of the webserver to make fraudulent actions by clicking something other than what is meant to be clicked. And this could happen as a result of lacking x-Frame options. (Nessus, 2015)
 After gathering such information, as a security professional what is the next step to consider to remediate these challenges? As a team member, I will apply the STRIDE threat modelling methodology for two reasons:
+
 <ol>
-                    <li>To help me identifying mitigation techniques.</li> 
+                    <li>To help me identify mitigation techniques.</li> 
                      <li>It is an easy to use methodology.</li>  
-</ol>
-                    								<img src="images/STRIDE.png" alt "Table1 A screenshot of applying the STRIDE method as a team">
+</ol>                
+		<h3>Table1 A screenshot of applying the STRIDE method as a team</h3>							
+              <img src="images/STRIDE.png" alt "">
+									
 
                     
                   
 								</p>
 <p>
-  References 
-Coss, D. Samonas, S. (2014) THE CIA STRIKES BACK: REDEFINING CONFIDENTIALITY, INTEGRITY AND AVAILABILITY IN SECURITY. JISSes Journal of Information System Security 10(3): 31. Available from: http://www.proso.com/dl/Samonas.pdf [Accessed Date 29 October 2021]
-Humayun, M. Niazi, M. Jhanjhi, M. Alshayeb,M. Mahmood, S (2020) Cyber Security  Threats and  Vulnerabilities: A Systematic Mapping Study. Arabian Journal for Science and Engineering 45: 3171–3189. DOI: https://doi.org/10.1007/s13369-019-04319-2
-Edwards, B. Hofmeyr, S. & Forrest, S. (2016) Hype and heavy tails: A closer look at
-data breaches. Journal of Cybersecurity 2(1): 3-14. DOI: 10.1093/cybsec/tyw003
-[Accessed 12 September 2021].
-Daud, M. Bakar, K. Hasan, M. (2014) ‘A Case Study on Web Application Vulnerability Scanning Tools’, Science and Information Conference 2014. London, UK, August 27-29, 2014. 595-596. 
-
- Makino, Y. Klyuev, V.(2015) Evaluation of web vulnerability scanners, IEEE 8th International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications (IDAACS).  399-402. 
-Spett, K. (2004) securityDocs.com. Available from: https://web.archive.org/web/20101230192555/http://www.securitydocs.com/library/2651 [Accessed 21 October 2021]
-Nessus (2001) Nessus | Plugins. Available from: https://www.tenable.com/plugins/nessus/10756 [Accessed 22 October 2021]
-Nessus (2010) Nessus | Plugins. Available from: https://www.tenable.com/plugins/nessus/46194    [Accessed 22 October 2021]
+  References </br>
+Coss, D. Samonas, S. (2014) THE CIA STRIKES BACK: REDEFINING CONFIDENTIALITY, INTEGRITY AND AVAILABILITY IN SECURITY. JISSes Journal of Information System Security 10(3): 31. Available from: http://www.proso.com/dl/Samonas.pdf [Accessed Date 29 October 2021]</br>
+Humayun, M. Niazi, M. Jhanjhi, M. Alshayeb,M. Mahmood, S (2020) Cyber Security  Threats and  Vulnerabilities: A Systematic Mapping Study. Arabian Journal for Science and Engineering 45: 3171–3189. DOI: https://doi.org/10.1007/s13369-019-04319-2</br>
+Edwards, B. Hofmeyr, S. & Forrest, S. (2016) Hype and heavy tails: A closer look atdata breaches. Journal of Cybersecurity 2(1): 3-14. DOI: 10.1093/cybsec/tyw003 [Accessed 12 September 2021].</br>
+Daud, M. Bakar, K. Hasan, M. (2014) ‘A Case Study on Web Application Vulnerability Scanning Tools’, Science and Information Conference 2014. London, UK, August 27-29, 2014. 595-596.</br> 
+Makino, Y. Klyuev, V.(2015) Evaluation of web vulnerability scanners, IEEE 8th International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications (IDAACS).  399-402.</br> 
+Spett, K. (2004) securityDocs.com. Available from: https://web.archive.org/web/20101230192555/http://www.securitydocs.com/library/2651 [Accessed 21 October 2021]</br>
+Nessus (2001) Nessus | Plugins. Available from: https://www.tenable.com/plugins/nessus/10756 [Accessed 22 October 2021]</br>
+Nessus (2010) Nessus | Plugins. Available from: https://www.tenable.com/plugins/nessus/46194    [Accessed 22 October 2021]</br>
 Shota, K. Gurkan, H. Mahamad, I (2021) executive summary –unit11 – university of Essex online.
 
   
